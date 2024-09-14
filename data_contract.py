@@ -4,9 +4,9 @@ from pydantic import BaseModel, EmailStr, PositiveFloat, PositiveInt
 from enum import Enum
 
 class ProdutoEnum(str, Enum):
-    ChabotGPT = 'ChabotGPT'
-    ChatbotGemini = 'ChatbotGemini'
-    ChatbotLlhama = 'ChatbotLlhama'
+    Varejo = 'Varejo'
+    SetorFinanceiro = 'Setor Financeiro'
+    Saúde = 'Saúde'
 
 class Vendas(BaseModel):
     email: EmailStr
