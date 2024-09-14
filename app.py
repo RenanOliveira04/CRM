@@ -3,6 +3,8 @@ from data_contract import Vendas
 from datetime import datetime, time
 from pydantic import ValidationError
 
+from database import save_in_postgres
+
 def main():
     st.title("CRM de Consultoria")
     email = st.text_input("Insira Seu Email:")
@@ -27,6 +29,7 @@ def main():
                 
             )
             st.success("Venda salva com sucesso!")
+            save_in_postgres(venda)
         except ValidationError as e:
             st.error(f"Erro de validação: {e}")
     
