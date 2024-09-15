@@ -12,7 +12,7 @@ def main():
     hora = st.time_input("Hora da compra", value=time(9, 30))
     valor = st.number_input("Valor da venda", min_value=0.0, format="%.2f")
     quantidade = st.number_input("Quantidade vendida", min_value=0, step=1)
-    produtos = st.selectbox("Setor do Cliente",options= ["Varejo", "Setor Financeiro", "Saúde"])
+    categorias = st.selectbox("Setor do Cliente",options= ["Varejo", "Setor Financeiro", "Saúde"])
     
     if  st.button("Salvar"):
         
@@ -24,7 +24,7 @@ def main():
                 data=data_hora, 
                 valor=valor, 
                 quantidade=quantidade, 
-                categoria=produtos,
+                categoria=categorias,
                 
             )
             st.success("Venda salva com sucesso!")
