@@ -24,7 +24,7 @@ def save_in_postgres(dados: Vendas):
         cursor = conn.cursor()
         
         insert_query = sql.SQL(
-            "INSERT INTO vendas (email, data, valor, quantidade, produto) VALUES (%s, %s, %s, %s, %s)"
+            "INSERT INTO vendas (email, data, valor, quantidade,categoria, produto) VALUES (%s, %s, %s, %s, %s)"
         )
         cursor.execute(insert_query, (
             dados.email,
