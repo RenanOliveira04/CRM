@@ -25,7 +25,6 @@ def main():
                 valor=valor, 
                 quantidade=quantidade, 
                 categoria=produtos,
-                produto=produtos
                 
             )
             st.success("Venda salva com sucesso!")

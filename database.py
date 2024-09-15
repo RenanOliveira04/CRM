@@ -24,14 +24,14 @@ def save_in_postgres(dados: Vendas):
         cursor = conn.cursor()
         
         insert_query = sql.SQL(
-            "INSERT INTO vendas (email, data, valor, quantidade,categoria, produto) VALUES (%s, %s, %s, %s, %s)"
+            "INSERT INTO vendas (email, data, valor, quantidade, categoria) VALUES (%s, %s, %s, %s, %s)"
         )
         cursor.execute(insert_query, (
             dados.email,
             dados.data,
             dados.valor,
             dados.quantidade,
-            dados.produto.value
+            dados.categoria,
         ))
         conn.commit()
         cursor.close()
