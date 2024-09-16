@@ -12,11 +12,11 @@ class Vendas(BaseModel):
     Modelo de dados para vendas.
     
     args:
-    email (EmailStr): Email do vendedor
-    data (datetime): Data da venda
-    valor (PositiveFloat): Valor da venda
-    quantidade (PositiveInt): Quantidade de produtos
-    setor (SetorEnum): Setor da venda
+        email (EmailStr): Email do vendedor
+        data (datetime): Data da venda
+        valor (PositiveFloat): Valor da venda
+        quantidade (PositiveInt): Quantidade de produtos
+        setor (SetorEnum): Setor da venda
     """
     email: EmailStr
     data: datetime
