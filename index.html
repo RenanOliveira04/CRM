@@ -333,12 +333,91 @@
 
 
         <p>Modelo de dados para vendas.</p>
-<p>args:
-email (EmailStr): Email do vendedor
-data (datetime): Data da venda
-valor (PositiveFloat): Valor da venda
-quantidade (PositiveInt): Quantidade de produtos
-setor (SetorEnum): Setor da venda</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>email</code></td>
+            <td>
+                  <code><span title="pydantic.EmailStr">EmailStr</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Email do vendedor</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>data</code></td>
+            <td>
+                  <code><span title="datetime.datetime">datetime</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Data da venda</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>valor</code></td>
+            <td>
+                  <code><span title="pydantic.PositiveFloat">PositiveFloat</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Valor da venda</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>quantidade</code></td>
+            <td>
+                  <code><span title="pydantic.PositiveInt">PositiveInt</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Quantidade de produtos</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>setor</code></td>
+            <td>
+                  <code><span title="data_contract.SetorEnum">SetorEnum</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Setor da venda</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
               <details class="quote">
                 <summary>Source code in <code>data_contract.py</code></summary>
@@ -362,11 +441,11 @@ setor (SetorEnum): Setor da venda</p>
 <span class="sd">    Modelo de dados para vendas.</span>
 
 <span class="sd">    args:</span>
-<span class="sd">    email (EmailStr): Email do vendedor</span>
-<span class="sd">    data (datetime): Data da venda</span>
-<span class="sd">    valor (PositiveFloat): Valor da venda</span>
-<span class="sd">    quantidade (PositiveInt): Quantidade de produtos</span>
-<span class="sd">    setor (SetorEnum): Setor da venda</span>
+<span class="sd">        email (EmailStr): Email do vendedor</span>
+<span class="sd">        data (datetime): Data da venda</span>
+<span class="sd">        valor (PositiveFloat): Valor da venda</span>
+<span class="sd">        quantidade (PositiveInt): Quantidade de produtos</span>
+<span class="sd">        setor (SetorEnum): Setor da venda</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">email</span><span class="p">:</span> <span class="n">EmailStr</span>
     <span class="n">data</span><span class="p">:</span> <span class="n">datetime</span>
