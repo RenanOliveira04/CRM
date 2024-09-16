@@ -19,7 +19,7 @@ def main():
             data_hora = datetime.combine(data, hora)
             
             venda = Vendas(
-                email = email,
+                email = email.lower(),
                 data = data_hora,
                 valor = valor,
                 quantidade = quantidade,

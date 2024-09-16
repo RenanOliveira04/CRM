@@ -13,7 +13,12 @@ DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
 
 def save_in_postgres(dados: Vendas):
-    
+    """
+    Função para salvar os dados no banco de dados Postgres.
+
+    Args:
+        dados (Vendas): Dados da venda
+    """
     try:
         conn = psycopg2.connect(
             host=DB_HOST,
