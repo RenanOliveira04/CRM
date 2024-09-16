@@ -19,7 +19,7 @@ def save_in_postgres(dados: Vendas):
             host=DB_HOST,
             database=DB_NAME,
             user=DB_USER,
-            password=DB_PASS
+            password=DB_PASS,
         )
         cursor = conn.cursor()
         
